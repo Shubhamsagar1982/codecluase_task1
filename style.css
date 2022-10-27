@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape,weather,sky');
+    font-size: 120%;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 3em;
+}
+
+@media (min-width:300px) and (max-width:700px) {
+    .card {
+        background: #000000d0;
+        color: white;
+        padding: 2em;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 270px;
+        margin: 7em;
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+    border-radius: 15px;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+footer {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: #000000d0;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 70%;
+    margin-top: 3em;
+    margin-bottom: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width:300px) and (max-width:700px) {
+    footer {
+        display: flex;
+        color: white;
+        size: 3px;
+        justify-content: center;
+        align-items: center;
+        background: #000000d0;
+        padding: 5px;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 70%;
+        margin-top: 3em;
+        margin-bottom: 0%;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
